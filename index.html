@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Fakhir Ahmed Khan - Passionate web developer and designer portfolio."
+    />
+    <title>Fakhir Ahmed Khan | Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/png" href="./assets/faveicon.png" />
+    <script
+      src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"
+      defer
+    ></script>
+    <script src="./main.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="nav-wrapper">
+        <nav aria-label="Main Navigation">
+          <div class="left">
+            <span id="navText"></span>
+          </div>
+          <button class="nav-toggle" aria-label="Toggle navigation">
+            &#9776;
+          </button>
+          <ul class="nav-links">
+            <li><a href="#index">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Projects</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="index">
+      <section class="firstSection">
+        <div class="intro">
+          <span class="intro-text">
+            Hi, I’m
+            <span class="name"
+              >Fakhir <span class="highlight">Ahmed</span> Khan</span
+            >
+          </span>
+          <span class="subtitle">
+            I’m a <span class="role"></span><br />
+            <span id="typed"></span>
+          </span>
+        </div>
+
+        <div class="rightSection">
+          <img
+            src="./assets/homeImg.png"
+            alt="Fakhir Ahmed Khan Portrait"
+            class="homeImg"
+            loading="lazy"
+          />
+        </div>
+      </section>
+    </main>
+
+    <section id="about" aria-labelledby="about-heading">
+      <div class="container about-section">
+        <h2>About Me</h2>
+        <br />
+        <p class="about-text">
+          Hello! I'm <strong>Fakhir Ahmed Khan</strong>, a passionate web
+          developer and designer dedicated to crafting engaging, user friendly
+          websites.
+        </p>
+        <p class="about-text">
+          I'm currently diving deeper into
+          <strong>full-stack development</strong> and continuously sharpening my
+          programming and design skills through hands-on projects and learning.
+        </p>
+        <br />
+        <h2>Skills I'm Learning</h2>
+        <br />
+        <div class="skillsName">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JAVASCRIPT</span>
+          <span>REACT</span>
+          <span>PYTHON</span>
+          <span>GIT</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="project" aria-labelledby="projects-heading">
+      <div class="container">
+        <article class="project-card-head">
+          <h2 id="projects-heading">My Projects</h2>
+          <p class="project-text">
+            Welcome to my portfolio, showcasing projects that reflect my skills
+            and experience in web development
+          </p>
+        </article>
+        <div class="gitIcon-wrapper">
+          <a
+            class="gitIcon"
+            href="https://github.com/FakhirAhmedKhan"
+            target="_blank"
+            aria-label="GitHub Profile"
+          >
+            <img class="gitIconImg" src="./assets/giticon.png" alt="GitHub" />
+          </a>
+          <a
+            class="gitIcon"
+            href="https://www.linkedin.com/in/fakhirahmedkhan/"
+            target="_blank"
+            aria-label="LinkedIn Profile"
+          >
+            <img
+              class="gitIconImg"
+              src="./assets/linkdenIcon.png"
+              alt="LinkedIn"
+            />
+          </a>
+        </div>
+        <div class="project-showcase projects-container"></div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <h2>Feedback</h2>
+        <p>We'd love to hear what you think!</p>
+        <form id="feedbackForm" class="feedback-section">
+          <label for="feedback" class="visually-hidden">Your feedback</label>
+          <textarea
+            id="feedback"
+            name="feedback"
+            placeholder="Your feedback..."
+            required
+          ></textarea>
+          <button type="submit" id="subBtn">Submit</button>
+        </form>
+        <p class="copyright">© 2025 Fakhir Ahmed Khan. All rights reserved.</p>
+        <p class="footer-text">Thank you for visiting my portfolio</p>
+      </div>
+    </footer>
+  </body>
+</html>
