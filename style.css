@@ -648,8 +648,8 @@ footer .copyright {
   }
 }
 
-/* up to 400px */
-@media (max-width: 360px) {
+/* up to 340px */
+@media (max-width: 340px) {
   .skills-wrapper {
     grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     gap: 0.5rem;
@@ -666,5 +666,30 @@ footer .copyright {
   nav ul {
     flex-wrap: wrap;
     justify-content: center;
+  }
+  .gallery img {
+    width: 100px;
+    height: 70px;
+  }
+  .project-card img {
+    padding: 5px;
+    text-align: center; /* center text/content */
+    width: 14rem;
+  }
+  .project-card h2 {
+    font-size: 1rem;
+  }
+  .project-card p {
+    font-size: 0.85rem;
+  }
+  .firstPara {
+    font-size: 0.9rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .gitIconImg {
+    width: 32px;
+    height: 32px;
   }
 }
