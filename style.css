@@ -649,7 +649,7 @@ footer .copyright {
 }
 
 /* up to 400px */
-@media (max-width: 400px) {
+@media (max-width: 360px) {
   .skills-wrapper {
     grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     gap: 0.5rem;
