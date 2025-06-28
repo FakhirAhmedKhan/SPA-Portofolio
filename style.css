@@ -648,48 +648,95 @@ footer .copyright {
   }
 }
 
-/* up to 340px */
-@media (max-width: 340px) {
-  .skills-wrapper {
-    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-    gap: 0.5rem;
-    padding: 0.1rem;
+@media (max-width: 360px) {
+  .firstSection {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
   }
-  .skill-link {
-    width: 26%;
-    font-size: 0.85rem;
-    padding: 0.5rem 0.2rem;
-  }
-  .rightSection img {
-    max-width: 280px;
-  }
-  nav ul {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .gallery img {
-    width: 100px;
-    height: 70px;
-  }
-  .project-card img {
-    padding: 5px;
-    text-align: center; /* center text/content */
-    width: 14rem;
-  }
-  .project-card h2 {
-    font-size: 1rem;
-  }
-  .project-card p {
-    font-size: 0.85rem;
-  }
-  .firstPara {
-    font-size: 0.9rem;
-  }
-  h1 {
+
+  .intro-text {
     font-size: 1.5rem;
   }
+
+  #typed {
+    font-size: 2rem;
+  }
+
+  .homeImg {
+    width: 100px;
+    margin-top: -10rem;
+  }
+
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 0.5rem 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  nav ul li a {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+  }
+  .about-section {
+    margin-top: -13rem;
+  }
+  .projects-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .project-card {
+    padding: 1px;
+  }
+
+  .project-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .project-card h2 {
+    font-size: 1.2rem;
+  }
+
+  .project-card p {
+    font-size: 0.9rem;
+  }
+
+  footer {
+    padding: 20px 10px;
+  }
+
+  footer h3 {
+    font-size: 1.2rem;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+  }
+
+  .feedback-section textarea {
+    height: 60px;
+    font-size: 0.9rem;
+  }
+
+  .feedback-section button {
+    width: 100%;
+    padding: 0.8rem;
+  }
+
+  .skillsName span {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+  }
+
   .gitIconImg {
-    width: 32px;
-    height: 32px;
+    width: 28px;
   }
 }
